@@ -1,9 +1,6 @@
 ## Installation: 
 
 ```
-gunzip bitdiscovery.tar.gz
-tar -xvf bitdiscovery.tar
-cd bitdiscovery
 sudo python3 setup.py install
 ```
 
