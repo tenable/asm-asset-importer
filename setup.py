@@ -4,17 +4,17 @@ import os
 long_description = '''
 BitDiscovery -> Tenable.io Asset Bridge
 For usage documentation, please refer to the github repository at
-https://github.com/tenable/integrations-bitdiscovery
+https://github.com/bitdiscovery/integration-tenable
 '''
 
 setup(
     name='tenable-bitdiscovery',
     version='1.0.0',
-    description='',
-    author='Tenable, Inc.',
+    description='BitDiscovery to Tenable.io Asset importer',
+    author='BitDiscovery',
     long_description=long_description,
-    author_email='smcgrath@tenable.com',
-    url='https://github.com/tenable/integrations-bitdiscovery',
+    author_email='robert@bitdiscovery.com',
+    url='https://github.com/bitdiscovery/integration-tenable',
     license='MIT',
     classifiers=[
         'Development Status :: 4 - Beta',
@@ -31,9 +31,9 @@ setup(
     keywords='tenable tenable_io bitdiscovery',
     packages=find_packages(exclude=['tests']),
     install_requires=[
-        'pytenable>=0.3.28',
+        'pytenable>=1.0.0',
         'Click>=7.0',
-        'RESTfly>=1.0.3',
+        'RESTfly>=1.1.1',
     ],
     entry_points={
         'console_scripts': [
