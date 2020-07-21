@@ -16,7 +16,6 @@ class InventoryIterator(APIIterator):
         for asset in resp['assets']:
             self._query['after'] = asset['id']
         self.page = resp['assets']
-        self.total = resp['total']
 
 
 class InventoryAPI(APIEndpoint):
@@ -32,6 +31,7 @@ class InventoryAPI(APIEndpoint):
             size (int, optional):
                 The size of the page to request to the BitDiscovery API.  If
                 left unspecified, the default is 1000.
+            total (int, optional):
 
         Returns:
             obj:`InventoryIterator`:
